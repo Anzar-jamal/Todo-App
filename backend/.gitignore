@@ -1,0 +1,51 @@
+# ----------------------
+# Dependencies
+# ----------------------
+node_modules/
+# Keep package-lock.json (or yarn.lock) to ensure consistent installs
+# but ignore debug logs created if an install fails
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ----------------------
+# Security & Environment (CRITICAL)
+# ----------------------
+# Never push these files as they contain DB passwords and API keys
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ----------------------
+# Logs & Runtime
+# ----------------------
+logs
+*.log
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# ----------------------
+# Testing (Jest/Mocha)
+# ----------------------
+coverage/
+.nyc_output/
+
+# ----------------------
+# Build / Compilation
+# ----------------------
+# If you ever switch to TypeScript or Babel, these folders hold compiled code
+dist/
+build/
+
+# ----------------------
+# OS & Editor Files
+# ----------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
