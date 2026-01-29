@@ -8,7 +8,7 @@ const PasswordInput = ({value, onChange , placeholder}) => {
         setIsShowpassword(!isShowPassword);
     }
   return (
-    <div className='flex items-center bg-transparent mb-3  border-[0.2px] rounded px-5' >
+    <div className='flex items-center bg-transparent mb-3  border-[0.2px] border-gray-400 rounded px-5' >
 
         <input 
         value={value}
