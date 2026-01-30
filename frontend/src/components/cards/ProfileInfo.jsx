@@ -13,7 +13,7 @@ const ProfileInfo = ({onLogout}) => {
             </p>
 
             <button 
-            className='text-sm text-slate-700 underline'
+            className='text-sm text-slate-700 underline cursor-pointer'
             onClick={onLogout}
             >
                 Logout
