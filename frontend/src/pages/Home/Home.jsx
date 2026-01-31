@@ -1,10 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import NoteCard from '../../components/cards/NoteCard'
 import { MdAdd } from 'react-icons/md'
 import AddEditNotes from './AddEditNotes'
 
 const Home = () => {
+
+  const [openAddEditModal,setOpenAddEditModal] = useState({
+    isShown:false,
+    type:"add",
+    data: null,
+  });
+
+
+  
   return (
     <>
       <Navbar/>

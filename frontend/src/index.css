@@ -2,6 +2,8 @@
 
 @import "tailwindcss";
 
+
+
 @theme {
   /* This matches the "primary" color */
   --color-primary: #2B85FF;
@@ -9,6 +11,7 @@
   /* This matches the "secondary" color */
   --color-secondary: #EF863E;
 }
+
 
 
 @layer base {
