@@ -6,7 +6,9 @@ const PasswordInput = ({value, onChange , placeholder}) => {
 
     const toggleShowPassword = ()=>{
         setIsShowpassword(!isShowPassword);
-    }
+    };
+
+
   return (
     <div className='flex items-center bg-transparent mb-3  border-[0.2px] border-gray-400 rounded px-5' >
 
