@@ -69,7 +69,7 @@ const Home = () => {
         }}
         >
 
-          <AddEditNotes />
+          <AddEditNotes onClose={()=>setOpenAddEditModal({isShown:false,type:"add",data:null})}  />
         </Modal>
 
       </div>

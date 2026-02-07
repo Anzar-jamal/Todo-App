@@ -2,16 +2,21 @@ import React, { useState } from 'react'
 import TagInput from '../../components/input/TagInput'
 import { MdClose } from 'react-icons/md'
 
-const AddEditNotes = () => {
+const AddEditNotes = ({onClose}) => {
 
   const[tags,setTags] = useState([]);
   const[title,setTitle] = useState("");
   const[content,setContent] = useState("")
 
 
-  return (
-    <div >
 
+  return (
+    <div className=' relative' >
+
+
+      <button className='w-10 h-10 rounded-full flex cursor-pointer items-center absolute justify-center -right-3 -top-3 hover:bg-slate-200 hover:text-3xl transition-all duration-500' >
+        <MdClose className=' text-slate-300 text-2xl' onClick={onClose} />
+      </button>
       
       <div className='flex flex-col gap-2' >
           <label className='input-label'>Title</label>
